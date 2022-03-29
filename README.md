@@ -20,4 +20,5 @@ The live application can be seen the screenshot below.
 
 ![screenshot of workday planner application](/Develop/images/Screenshot_finished_app.png)
 
-Link to deployed application: 
+Link to deployed application: https://britbolt.github.io/workday-scheduler/
+
