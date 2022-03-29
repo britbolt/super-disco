@@ -1,18 +1,22 @@
 const DateTime = luxon.DateTime;
 const dt = DateTime.now();
 let now = DateTime.local().toFormat("H");
+let currentTime = parseInt(now);
 
 //display current date in header
 window.onload = showDate ();
 
 function showDate () {
     document.getElementById('currentDay').innerHTML = dt.toLocaleString(DateTime.DATETIME_MED) ;
+    
 };
-console.log(now);
+//console.log(now);
 
 //logic to reload clock for accurate time display in header
-let refresh = setInterval(showDate, 1000);
-
+function upDate() {
+setInterval(showDate, 1000);
+};
+upDate();
 
 //save task user inputs when button clicked
 //click event for 9AM
@@ -114,3 +118,25 @@ $("#btn5").on("click change", function(){
 //retrieve task from local storage 5PM
 $("#task5").val(localStorage.getItem("5PM"));
 
+
+//create const to access textarea divs
+const times = document.getElementsByClassName("col-9");
+//create array from divs using ids
+Array.from(times).forEach(time => {
+  let timeList = time.id;
+
+//convert ids to numbers to compare with current time
+    let timeHour = parseInt(timeList);
+  
+//if current time, change color 
+     if (timeHour===currentTime) {
+      time.classList.add('present');
+  //if current time is in the past change color to gray
+    } else if (timeHour < currentTime) {
+      time.classList.add ('past')
+    }
+//if current time is in the future change color to green
+    else if (timeHour > currentTime) {
+      time.classList.add ('future')
+    };
+});
