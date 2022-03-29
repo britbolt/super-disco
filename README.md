@@ -1,4 +1,5 @@
 # Work Day Scheduler
+
 This application allows the user to manage their tasks during the work day hours. The color of the task area changes as the day progresses to show what the present task should be and future tasks, while graying out past hours and tasks. 
 
 ### Technologies used:
@@ -19,3 +20,4 @@ The live application can be seen the screenshot below.
 
 ![screenshot of workday planner application](/Develop/images/Screenshot_finished_app.png)
 
+Link to deployed application: 
