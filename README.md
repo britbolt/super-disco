@@ -18,7 +18,7 @@ The functionality for keeping the time current is due to the use of the Luxon da
 
 The live application can be seen the screenshot below. 
 
-![screenshot of workday planner application](/Develop/images/Screenshot_finished_app.png)
+![screenshot of workday planner application](/images/Screenshot_finished_app.png)
 
 Link to deployed application: https://britbolt.github.io/workday-scheduler/
 
