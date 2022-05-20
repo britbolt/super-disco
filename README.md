@@ -9,7 +9,7 @@ This application allows the user to manage their tasks during the work day hours
 * Bootstrap
 * jquery
 
-###Also included styles and fonts from:
+### Also included styles and fonts from:
 * Google fonts
 * Boostrap icons
 * fontawesome
